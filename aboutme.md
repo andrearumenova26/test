@@ -23,8 +23,6 @@ En este trabajo investigué cómo se pueden diseñar y construir edificios más 
 
 ## Estudios
 
-<br>
-
 - **ESO (2020–2024)** — Instituto La Salle Mollerussa.
 - **Bachillerato Tecnológico (2024–2026)** — Instituto La Salle Mollerussa.
 - **Actualmente:** Grado en Diseño Digital y Tecnologías Creativas (DDTEC) — Universidad de Lleida.

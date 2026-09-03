@@ -3,6 +3,8 @@
 
 body {
   color: #808080 !important;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1,
@@ -15,4 +17,19 @@ h6,
 .post-title,
 .page-title {
   color: #12355b !important;
+}
+
+h1,
+.page-heading,
+.post-title,
+.page-title {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
