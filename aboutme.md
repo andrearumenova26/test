@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "DDTEC: Disseny Digital i Tecnologies Creatives"
+title: "Andrea's Website"
 subtitle: ""
 ---
 
