@@ -10,11 +10,15 @@ subtitle: ""
 		--page-text: #404040;
 		--flower-blue: #12355b;
 		--soft-white: rgba(255, 255, 255, 0.72);
+		--privacy-border: rgba(18, 53, 91, 0.2);
 	}
 
 	body.dark-mode {
 		--page-background: #101923;
 		--page-text: #f7f7f5;
+		--flower-blue: #f7f7f5;
+		--soft-white: rgba(16, 25, 35, 0.82);
+		--privacy-border: rgba(247, 247, 245, 0.24);
 	}
 
 	body {
@@ -104,7 +108,7 @@ subtitle: ""
 		height: 48px;
 		border-radius: 50%;
 		background-color: var(--flower-blue);
-		color: #fff;
+		color: var(--page-background);
 		font-size: 1.5rem;
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
@@ -115,19 +119,23 @@ subtitle: ""
 		box-shadow: 0 6px 14px rgba(18, 53, 91, 0.24);
 	}
 
+	body.dark-mode .social-links a:hover,
+	body.dark-mode .social-links a:focus-visible {
+		box-shadow: 0 6px 14px rgba(247, 247, 245, 0.2);
+	}
+
 	.theme-toggle {
 		position: fixed;
 		top: 76px;
 		right: 20px;
 		z-index: 10;
-		padding: 8px 12px;
+		padding: 7px 14px;
 		border: 1px solid var(--flower-blue);
-		border-radius: 4px;
+		border-radius: 0;
 		background: var(--flower-blue);
-		color: #fff;
+		color: var(--page-background);
 		cursor: pointer;
-		font-size: 0.9rem;
-		box-shadow: 0 3px 8px rgba(18, 53, 91, 0.2);
+		font-size: 1rem;
 	}
 
 	.language-switcher {
@@ -151,7 +159,7 @@ subtitle: ""
 		max-width: 620px;
 		margin: 56px auto 0;
 		padding: 16px 18px;
-		border: 1px solid rgba(18, 53, 91, 0.2);
+		border: 1px solid var(--privacy-border);
 		background: var(--soft-white);
 		color: var(--page-text);
 		font-size: 0.9rem;
@@ -165,7 +173,7 @@ subtitle: ""
 	.privacy-notice button {
 		border: 1px solid var(--flower-blue);
 		background: var(--flower-blue);
-		color: #fff;
+		color: var(--page-background);
 		cursor: pointer;
 		padding: 7px 14px;
 	}
@@ -183,6 +191,14 @@ subtitle: ""
 		justify-content: center;
 		background: rgba(255, 255, 255, 0.82);
 		transition: opacity 0.45s ease, visibility 0.45s ease;
+	}
+
+	body.dark-mode .page-loader {
+		background: rgba(16, 25, 35, 0.88);
+	}
+
+	body.dark-mode .social-links img {
+		filter: invert(1);
 	}
 
 	.page-loader.is-hidden {
