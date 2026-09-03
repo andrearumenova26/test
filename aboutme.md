@@ -16,6 +16,8 @@ Uno de los proyectos más importantes que he realizado es mi **TDR (Trabajo de I
 
 En este trabajo investigué cómo se pueden diseñar y construir edificios más eficientes y sostenibles, reduciendo al máximo su consumo energético y su impacto sobre el medio ambiente.
 
+[Descargar mi TDR](Andrea_Rumenova_TDR.pdf)
+
 ## Estudios
 
 - **ESO (2020–2024)** — Instituto La Salle Mollerussa.
