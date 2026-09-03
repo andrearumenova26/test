@@ -63,6 +63,25 @@ subtitle: ""
 		border-top: 4px solid var(--page-text);
 	}
 
+	.about-button {
+		display: block;
+		width: fit-content;
+		margin: 24px auto 0;
+		padding: 11px 26px;
+		border-radius: 6px;
+		background-color: var(--flower-blue);
+		color: #fff;
+		font-weight: 600;
+		text-decoration: none;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.about-button:hover,
+	.about-button:focus-visible {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 14px rgba(18, 53, 91, 0.24);
+	}
+
 	.social-links {
 		display: flex;
 		flex-wrap: wrap;
@@ -237,6 +256,7 @@ subtitle: ""
 		<h1 class="site-title">Andrea's Website</h1>
 		<hr class="title-rule">
 	</div>
+	<a class="about-button" href="{{ '/aboutme/' | relative_url }}">Sobre mí</a>
 
 	<div class="social-links">
 		<a href="mailto:am90@alumnes.udl.cat" aria-label="Correo universitario" title="Correo universitario"><i class="fas fa-envelope" aria-hidden="true"></i></a>
