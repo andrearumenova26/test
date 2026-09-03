@@ -1,6 +1,6 @@
 remote_theme: daattali/beautiful-jekyll@6.0.1
-title: My website
-author: Homer Simpson
+title: ""
+author: ""
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -8,9 +8,7 @@ author: Homer Simpson
 
 # For each link, make sure to create a corresponding markdown file in the root folder (like `aboutme.md`)
 
-navbar-links:
-  About Me: "aboutme"
-  Example Page: "example"
+navbar-links: {}
 
 ################
 # --- Logo --- #
@@ -35,14 +33,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
-social-network-links:
-  email: "am90@alumnes.udl.cat"
-  facebook: homer.simpson
-  github: homer.simpson
-  twitter: "@homeeer"
-  youtube: "@homer.simpson"
-  linkedin: homer.simpson
-  whatsapp: "34666676869"  # Afegeix el teu número aquí (codi país + número)
+social-network-links: {}
 
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -80,10 +71,13 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "homersimpson.github.io"
+url-pretty: ""
 
 # Add the website title to the title of every page
 title-on-all-pages: true
+
+# Do not show theme credits in the footer
+remove-credits: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
