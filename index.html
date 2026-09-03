@@ -4,16 +4,250 @@ title: ""
 subtitle: ""
 ---
 
-<div style="width: fit-content; margin: 0 auto; text-align: center;">
-<h1 style="margin-top: 0; margin-bottom: 12px;">Andrea's Website</h1>
+<style>
+	:root {
+		--page-background: #fafaf9;
+		--page-text: #404040;
+		--flower-blue: #12355b;
+		--soft-white: rgba(255, 255, 255, 0.72);
+	}
 
-<hr style="width: 100%; margin: 0; border: 0; border-top: 4px solid #404040;">
+	body.dark-mode {
+		--page-background: #101923;
+		--page-text: #f7f7f5;
+	}
+
+	body {
+		background-color: var(--page-background);
+		color: var(--page-text);
+		transition: background-color 0.35s ease, color 0.35s ease;
+	}
+
+	.home-content {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		padding: 20px 12px 70px;
+	}
+
+	.home-content::before,
+	.home-content::after {
+		position: absolute;
+		z-index: -1;
+		color: var(--flower-blue);
+		opacity: 0.08;
+		font-size: 8rem;
+		line-height: 1;
+		pointer-events: none;
+	}
+
+	.home-content::before {
+		top: 16%;
+		left: 7%;
+		content: "✿";
+	}
+
+	.home-content::after {
+		right: 7%;
+		bottom: 15%;
+		content: "✿";
+	}
+
+	.site-title {
+		margin-top: 0;
+		margin-bottom: 12px;
+		color: var(--page-text);
+		text-align: center;
+	}
+
+	.title-rule {
+		width: 100%;
+		margin: 0;
+		border: 0;
+		border-top: 4px solid var(--page-text);
+	}
+
+	.social-links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		margin-top: 24px;
+		text-align: center;
+	}
+
+	.social-links a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: var(--flower-blue);
+		color: #fff;
+		font-size: 1.5rem;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.social-links a:hover,
+	.social-links a:focus-visible {
+		transform: translateY(-3px);
+		box-shadow: 0 6px 14px rgba(18, 53, 91, 0.24);
+	}
+
+	.theme-toggle {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 42px;
+		height: 42px;
+		border: 1px solid var(--flower-blue);
+		border-radius: 50%;
+		background: transparent;
+		color: var(--flower-blue);
+		cursor: pointer;
+		font-size: 1.2rem;
+	}
+
+	.privacy-notice {
+		max-width: 620px;
+		margin: 56px auto 0;
+		padding: 16px 18px;
+		border: 1px solid rgba(18, 53, 91, 0.2);
+		background: var(--soft-white);
+		color: var(--page-text);
+		font-size: 0.9rem;
+		text-align: center;
+	}
+
+	.privacy-notice p {
+		margin: 0 0 12px;
+	}
+
+	.privacy-notice button {
+		border: 1px solid var(--flower-blue);
+		background: var(--flower-blue);
+		color: #fff;
+		cursor: pointer;
+		padding: 7px 14px;
+	}
+
+	.privacy-notice.is-hidden {
+		display: none;
+	}
+
+	.page-loader {
+		position: fixed;
+		inset: 0;
+		z-index: 1000;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: rgba(255, 255, 255, 0.82);
+		transition: opacity 0.45s ease, visibility 0.45s ease;
+	}
+
+	.page-loader.is-hidden {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.flower-spinner {
+		position: relative;
+		width: 74px;
+		height: 74px;
+		animation: spin 2.4s linear infinite;
+	}
+
+	.flower-spinner span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: var(--flower-blue);
+		font-size: 1.35rem;
+		opacity: 0.32;
+		transform: rotate(calc(var(--flower-position) * 45deg)) translateY(-28px);
+		transform-origin: center 28px;
+	}
+
+	.flower-spinner span:nth-child(1) { --flower-position: 0; }
+	.flower-spinner span:nth-child(2) { --flower-position: 1; }
+	.flower-spinner span:nth-child(3) { --flower-position: 2; }
+	.flower-spinner span:nth-child(4) { --flower-position: 3; }
+	.flower-spinner span:nth-child(5) { --flower-position: 4; }
+	.flower-spinner span:nth-child(6) { --flower-position: 5; }
+	.flower-spinner span:nth-child(7) { --flower-position: 6; }
+	.flower-spinner span:nth-child(8) { --flower-position: 7; }
+
+	@keyframes spin {
+		to { transform: rotate(360deg); }
+	}
+
+	@media (max-width: 600px) {
+		.theme-toggle {
+			top: 12px;
+			right: 12px;
+		}
+
+		.social-links {
+			gap: 14px;
+		}
+	}
+</style>
+
+<div class="page-loader" id="page-loader" aria-label="Cargando">
+	<div class="flower-spinner" aria-hidden="true">
+		<span>✿</span><span>✿</span><span>✿</span><span>✿</span>
+		<span>✿</span><span>✿</span><span>✿</span><span>✿</span>
+	</div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; margin-top: 24px; text-align: center;">
-	<a href="mailto:am90@alumnes.udl.cat" aria-label="Correo universitario" title="Correo universitario" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background-color: #12355b; color: #fff; font-size: 1.5rem;"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-	<a href="mailto:andrearumenova26@gmail.com" aria-label="Correo personal" title="Correo personal" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background-color: #12355b; color: #fff; font-size: 1.5rem;"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-	<a href="tel:+34663380042" aria-label="Teléfono" title="Teléfono" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background-color: #12355b; color: #fff; font-size: 1.5rem;"><i class="fas fa-phone" aria-hidden="true"></i></a>
-	<a href="https://www.instagram.com/andreearrm" aria-label="Instagram" title="Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background-color: #12355b; color: #fff; font-size: 1.5rem;"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-	<a href="https://www.tiktok.com/@andreearrm" aria-label="TikTok" title="TikTok" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background-color: #12355b;"><img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="" width="24" height="24"></a>
-</div>
+<main class="home-content">
+	<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activar modo oscuro" title="Modo oscuro">☾</button>
+	<div style="width: fit-content; margin: 0 auto; text-align: center;">
+		<h1 class="site-title">Andrea's Website</h1>
+		<hr class="title-rule">
+	</div>
+
+	<div class="social-links">
+		<a href="mailto:am90@alumnes.udl.cat" aria-label="Correo universitario" title="Correo universitario"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+		<a href="mailto:andrearumenova26@gmail.com" aria-label="Correo personal" title="Correo personal"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+		<a href="tel:+34663380042" aria-label="Teléfono" title="Teléfono"><i class="fas fa-phone" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/andreearrm" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+		<a href="https://www.tiktok.com/@andreearrm" aria-label="TikTok" title="TikTok"><img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="" width="24" height="24"></a>
+	</div>
+
+	<aside class="privacy-notice" id="privacy-notice">
+		<p>Esta web muestra un correo universitario, un correo personal y un número de teléfono. Estos datos son públicos y se utilizan únicamente para facilitar el contacto.</p>
+		<button id="privacy-close" type="button">Entendido</button>
+	</aside>
+</main>
+
+<script>
+	const pageLoader = document.getElementById('page-loader');
+	const themeToggle = document.getElementById('theme-toggle');
+	const privacyNotice = document.getElementById('privacy-notice');
+	const privacyClose = document.getElementById('privacy-close');
+
+	if (localStorage.getItem('dark-mode') === 'true') {
+		document.body.classList.add('dark-mode');
+		themeToggle.textContent = '☀';
+		themeToggle.setAttribute('aria-label', 'Desactivar modo oscuro');
+	}
+
+	themeToggle.addEventListener('click', () => {
+		const darkModeEnabled = document.body.classList.toggle('dark-mode');
+		localStorage.setItem('dark-mode', darkModeEnabled);
+		themeToggle.textContent = darkModeEnabled ? '☀' : '☾';
+		themeToggle.setAttribute('aria-label', darkModeEnabled ? 'Desactivar modo oscuro' : 'Activar modo oscuro');
+	});
+
+	privacyClose.addEventListener('click', () => {
+		privacyNotice.classList.add('is-hidden');
+	});
+
+	window.addEventListener('load', () => {
+		pageLoader.classList.add('is-hidden');
+	});
+</script>
