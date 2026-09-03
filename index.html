@@ -52,8 +52,12 @@ subtitle: ""
 	.site-title {
 		margin-top: 0;
 		margin-bottom: 12px;
-		color: var(--page-text);
+		color: var(--flower-blue);
 		text-align: center;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: var(--flower-blue);
 	}
 
 	.title-rule {
@@ -67,19 +71,13 @@ subtitle: ""
 		display: block;
 		width: fit-content;
 		margin: 24px auto 0;
-		padding: 11px 26px;
-		border-radius: 6px;
+		padding: 7px 14px;
+		border: 1px solid var(--flower-blue);
+		border-radius: 0;
 		background-color: var(--flower-blue);
 		color: #fff;
-		font-weight: 600;
+		cursor: pointer;
 		text-decoration: none;
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
-	}
-
-	.about-button:hover,
-	.about-button:focus-visible {
-		transform: translateY(-2px);
-		box-shadow: 0 6px 14px rgba(18, 53, 91, 0.24);
 	}
 
 	.social-links {

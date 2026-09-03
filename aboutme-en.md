@@ -4,6 +4,11 @@ title: "About me"
 subtitle: ""
 ---
 
+<style>
+	h1, h2, h3, h4, h5, h6 { color: #12355b !important; }
+	body { color: #808080 !important; }
+</style>
+
 # About me
 
 Hello! My name is **Andrea**, and I am a first-year student at the **University of Lleida**, where I am studying **DDTEC: Digital Design and Creative Technologies**.

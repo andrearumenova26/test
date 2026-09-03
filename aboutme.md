@@ -4,6 +4,11 @@ title: "Sobre mí"
 subtitle: ""
 ---
 
+<style>
+	h1, h2, h3, h4, h5, h6 { color: #12355b !important; }
+	body { color: #808080 !important; }
+</style>
+
 # Sobre mí
 
 ¡Hola! Me llamo **Andrea** y soy estudiante de primer año en la **Universidad de Lleida**, donde curso el grado de **DDTEC: Diseño Digital y Tecnologías Creativas**.
