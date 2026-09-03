@@ -1,5 +1,5 @@
 ---
 layout: page
-title: "Andrea's Website"
+title: ""
 subtitle: ""
 ---
