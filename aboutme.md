@@ -40,4 +40,4 @@ En mi tiempo libre me gusta mantenerme activa y dedicar tiempo a actividades cre
 - 📋 **Organización:** me gusta organizar y planificar diferentes actividades.
 - 📚 **Lectura:** disfruto leyendo en mi tiempo libre.
 
-<a href="{{ '/aboutme-en/' | relative_url }}" style="display: inline-block; margin-top: 16px; padding: 7px 14px; border: 1px solid #12355b; background-color: #12355b; color: #fff; text-decoration: none;">Version en ingles</a>
+<a href="{{ '/aboutme-en/' | relative_url }}" style="display: inline-block; margin-top: 16px; padding: 7px 14px; border: 1px solid #12355b; background-color: #12355b; color: #fff; text-decoration: none;">Versión en inglés</a>
