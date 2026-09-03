@@ -23,6 +23,8 @@ En este trabajo investigué cómo se pueden diseñar y construir edificios más 
 
 ## Estudios
 
+<br>
+
 - **ESO (2020–2024)** — Instituto La Salle Mollerussa.
 - **Bachillerato Tecnológico (2024–2026)** — Instituto La Salle Mollerussa.
 - **Actualmente:** Grado en Diseño Digital y Tecnologías Creativas (DDTEC) — Universidad de Lleida.
@@ -37,3 +39,5 @@ En mi tiempo libre me gusta mantenerme activa y dedicar tiempo a actividades cre
 - 🎨 **Creatividad:** hacer manualidades y construir maquetas.
 - 📋 **Organización:** me gusta organizar y planificar diferentes actividades.
 - 📚 **Lectura:** disfruto leyendo en mi tiempo libre.
+
+<a href="{{ '/aboutme-en/' | relative_url }}" style="display: inline-block; margin-top: 16px; padding: 7px 14px; border: 1px solid #12355b; background-color: #12355b; color: #fff; text-decoration: none;">English version</a>

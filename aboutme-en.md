@@ -37,5 +37,3 @@ In my free time, I enjoy staying active and spending time on creative activities
 - **Creativity:** making crafts and building models.
 - **Organization:** organizing and planning different activities.
 - **Reading:** I enjoy reading in my free time.
-
-[Back to the Spanish version]({{ '/aboutme/' | relative_url }})
