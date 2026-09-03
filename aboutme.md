@@ -1,16 +1,14 @@
 ---
 layout: page
-title: About me
-subtitle: A brief personal description
+title: "DDTEC: Disseny Digital i Tecnologies Creatives"
+subtitle: ""
 ---
-
-My name is Homer Simpson, I am from Springfield and I love learning new skills. Have a look at my background below!
 
 ### Education
 
-- The Hood Education (1992)
-- B2 English Level
+- DDTEC: Disseny Digital i Tecnologies Creatives
+- Interessat en disseny digital, creativitat i tecnologia
 
 ### Experience
-- Nuclear Reactor engineer
-- Eating burguers
+- Aprenentatge de eines de disseny i tecnologies creatives
+- Exploració de noves habilitats digitals

@@ -36,13 +36,13 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "homer.simpson@gmail.com"
+  email: "am90@alumnes.udl.cat"
   facebook: homer.simpson
   github: homer.simpson
   twitter: "@homeeer"
   youtube: "@homer.simpson"
   linkedin: homer.simpson
-  whatsapp: "34666666666"  # Afegeix el teu número aquí (codi país + número)
+  whatsapp: "34666676869"  # Afegeix el teu número aquí (codi país + número)
 
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
@@ -114,7 +114,7 @@ navbar-var-length: false
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-page-col: "#FFFFFF"
+page-col: "#BEDBFF"
 text-col: "#404040"
 link-col: "#008AFF"
 hover-col: "#0085A1"
